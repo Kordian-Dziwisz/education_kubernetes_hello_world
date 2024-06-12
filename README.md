@@ -17,3 +17,7 @@ To enter pod
 `kubectl exec -ti hello-world -- bash`
 
 To update pod just use `kubectl apply -f service/hello-world.yaml` again
+
+You can also attach to the pod using
+
+`kubectl attach pods/hello-world`
