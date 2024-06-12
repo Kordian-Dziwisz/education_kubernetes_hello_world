@@ -1,0 +1,25 @@
+services:
+  db:
+    container_name: education_university_kolos_2_db
+    image: mongo:${MONGO_VERSION}
+    volumes:
+      - db:/data/db
+    ports:
+      - ${MONGO_PORT}:${MONGO_PORT}
+  server:
+    build: ./hello_world
+    container_name: education_university_kolos_2_server
+    ports:
+      - 3003:8080
+    depends_on:
+      - db
+    networks:
+      - net_A
+
+networks:
+  net_A:
+
+volumes:
+  db:
+    external:
+      name: education_university_kolos_2_db
