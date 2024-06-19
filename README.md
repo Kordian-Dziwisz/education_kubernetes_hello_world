@@ -1,5 +1,7 @@
 # education_kubernetes_hello_world
 
+The simple hello_world app presenting the creation of pods in kubernetes
+
 To build image:
 
 `docker buildx build -t kordiandziwisz/education_kubernetes_hello_world ./docker`
