@@ -1,6 +1,8 @@
 # education_kubernetes_hello_world
 
-The simple hello_world app presenting the creation of pods in kubernetes, it contains typescript app and the dockerbuild files
+The simple hello_world app presenting the creation of pods in kubernetes, it contains typescript app and the dockerbuild files.
+
+You can use labels! for example you may write `kubectl get service -l type=education`, isn't it fascinating?
 
 ## To build a docker image:
 
@@ -16,7 +18,7 @@ The simple hello_world app presenting the creation of pods in kubernetes, it con
 
 ### If using minikube
 
-`minikube service hello-world`
+`minikube service hello-world` will show you the service port tunneled by the minikube
 
 ## To get pods:
 
